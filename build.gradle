@@ -82,7 +82,7 @@ task integrationTest(type: Test) {
 }
 
 docker {
-    url 'unix:///var/run/docker.sock'
+    url 'tcp://127.0.0.1:2375'
 }
 
 import com.bmuschko.gradle.docker.tasks.image.Dockerfile
